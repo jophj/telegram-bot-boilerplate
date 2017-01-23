@@ -1,0 +1,10 @@
+{
+	"production":{
+		"db": "mongodb://user:password@localhost/myproductiondb",
+		"token": "productionBotToken"
+	},
+	"development":{
+		"db": "mongodb://user:password@localhost/mydevelopmentdb",
+		"token": "developmentBotToken"
+	}
+}
