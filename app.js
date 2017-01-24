@@ -13,5 +13,8 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Database connection error:'));
 
 const botModuleManager = new BotModuleManager(config.token);
-const SampleBotModule = require('./bot-modules/sample-bot-module');
-botModuleManager.registerBotModule(SampleBotModule);
+
+config.botModules.forEach(function(botModulePath) {
+  const botModule = require(botModulePath);
+  botModuleManager.registerBotModule(botModule);
+});
