@@ -29,7 +29,7 @@ class SampleBotModule extends BotModule {
 
       msg.save(function(err) {
         if (err) throw err;
-        console.log(`Message '${msg}' saved`);
+        console.log(`Message '${msg.text}' saved`);
       })
     });
   }
