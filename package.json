@@ -1,0 +1,25 @@
+{
+  "name": "telegram-bot-boilerplate",
+  "version": "1.0.0",
+  "description": "A Node.js Telegram bot boilerplate, including MongoDB and Express to be ready to provide APIs and/or a web application",
+  "main": "app.js",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "mongoose": "^4.7.8",
+    "telegraf": "^3.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jophj/telegram-bot-boilerplate.git"
+  },
+  "author": "Giovanni Pinto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jophj/telegram-bot-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jophj/telegram-bot-boilerplate#readme"
+}
