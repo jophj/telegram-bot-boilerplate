@@ -4,6 +4,7 @@
   "description": "A Node.js Telegram bot boilerplate, including MongoDB and Express to be ready to provide APIs and/or a web application",
   "main": "app.js",
   "dependencies": {
+    "mongoose": "^4.7.8",
     "telegraf": "^3.6.4"
   },
   "devDependencies": {},
