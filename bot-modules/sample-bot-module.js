@@ -19,7 +19,10 @@ class SampleBotModule extends BotModule {
       next();
     });
 
-    this.bot.on('message', (ctx) => console.log(ctx));
+    this.bot.on('message', (ctx) => {
+      console.log(ctx);
+      
+    });
   }
 }
 
