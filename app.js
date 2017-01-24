@@ -8,5 +8,5 @@ if (process.env.NODE_ENV) {
 
 const botModuleManager = new BotModuleManager(config.token);
 
-const BotModule = require('./bot-module');
-botModuleManager.registerBotModule(BotModule);
+const SampleBotModule = require('./bot-modules/sample-bot-module');
+botModuleManager.registerBotModule(SampleBotModule);
