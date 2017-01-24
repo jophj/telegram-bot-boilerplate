@@ -1,4 +1,5 @@
 const BotModule = require('../bot-module');
+const Message = require('../models/message');
 
 function* countHi() {
   let count = 0;
@@ -20,8 +21,16 @@ class SampleBotModule extends BotModule {
     });
 
     this.bot.on('message', (ctx) => {
-      console.log(ctx);
-      
+      var msg = new Message({
+        id: ctx.update.message.message_id,
+        date: new Date(ctx.update.message.date * 1000),
+        text: ctx.update.message.text
+      });
+
+      msg.save(function(err) {
+        if (err) throw err;
+        console.log(`Message '${msg}' saved`);
+      })
     });
   }
 }
